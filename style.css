@@ -17,16 +17,28 @@ body {
 
 /* Navbar */
 .nav-bar {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
 }
 
 /* Nav links */
 .nav-items {
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    right: 0px;
+    background: white;
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px 0;
+}
+/* When burger icon open */
+.nav-items.open {
     display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    padding: 0;
 }
 
 /* a tags in nav bar, to remove underline */
@@ -35,6 +47,15 @@ body {
     color: black;
     font-size: x-large;
     padding: 2px 6px; /* Clickable area */
+}
+
+.burger-icon {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
 }
 
 /* Main area */
