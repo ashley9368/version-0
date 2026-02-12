@@ -1,0 +1,27 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+/* Navbar */
+.nav-bar {
+    text-align: center;
+}
+
+.nav-items {
+    list-style: none;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+}
