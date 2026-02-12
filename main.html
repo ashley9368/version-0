@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Version 0</title>
 </head>
+
 <body>
-    <h1>Coming soon</h1>
+    <header>
+        <!-- Nav -->
+        <nav class="nav-bar">
+            <a href="index.html" class="title">
+                <h1>Title</h1>
+            </a>
+
+            <button class="burger-icon" aria-label="Open burger icon"><i class="fa-solid fa-bars"></i></button>
+
+            <ul class="nav-items">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">How it works</a></li>
+                <li><a href="">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <p>Coming Soon</p>
+    </main>
+
+    <footer class="footer">
+        <h2>Footer</h2>
+    </footer>
+
+    <!-- Js for burger menu -->
+    <script>
+        const burger = document.querySelector(".burger-icon");
+        const nav = document.querySelector(".nav-items");
+
+        burger.addEventListener("click", () => {
+            nav.classList.toggle("open");
+    });
+    </script>
 </body>
+
 </html>
